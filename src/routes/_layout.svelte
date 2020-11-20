@@ -1,13 +1,13 @@
 <script>
 	import Nav from '../components/Nav.svelte';
-
-	export let segment;
 </script>
 
-<style>
+<style type='text/scss'>
+@import "../styles/theme.scss";
+
 	main {
 		position: relative;
-		max-width: 56em;
+		max-width: $site-width;
 		background-color: white;
 		padding: 2em;
 		margin: 0 auto;
@@ -15,8 +15,8 @@
 	}
 </style>
 
-<Nav {segment}/>
+<Nav />
 
-<main>
+<main >
 	<slot></slot>
 </main>

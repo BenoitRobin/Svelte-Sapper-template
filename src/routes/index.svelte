@@ -2,13 +2,17 @@
 	import successkid from 'images/successkid.jpg';
 </script>
 
-<style>
-	h1, figure, p {
+<style type='text/scss'>
+@import "../styles/theme.scss";
+
+
+h1, figure, p {
 		text-align: center;
 		margin: 0 auto;
 	}
 
 	h1 {
+		color: $main-color;
 		font-size: 2.8em;
 		text-transform: uppercase;
 		font-weight: 700;
